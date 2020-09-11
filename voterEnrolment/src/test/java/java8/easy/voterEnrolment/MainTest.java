@@ -12,5 +12,16 @@ import static java8.easy.voterEnrolment.TestUtils.*
 	  yakshaAssert(currentTest(),Main.calculateAge("15-08-2010")?"true":"false",businessTestFile);
 	
 	}
+	@Test
+    public void testExceptionConditon() throws Exception{
+	 yakshaAssert(currentTest(),true,boundaryTestFile);
+      }
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+	  yakshaAssert(currentTest(),true,exceptionTestFile);
+   }
+
+
 
 }
